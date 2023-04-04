@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <base href="/quickcount/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="Quick Count App for Election">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -20,7 +21,7 @@
   <link rel="manifest" href="manifest.json">
 
   <script>
-    var serviceWorkerVersion = '246209946';
+    var serviceWorkerVersion = '1178985945';
   </script>
   <script src="flutter.js" defer></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -37,12 +38,17 @@
       justify-content: center;
       align-items: center;
     }
+
+    .lottie {
+      width: 100px;
+      height: 100px;
+    }
   </style>
 </head>
 <body>
   <div class="loading">
-    <lottie-player src="https://defuj.github.io/quickcount/loading.json" background="transparent" speed="1"
-      style="width: 100px; height: 100px;" loop autoplay></lottie-player>
+    <lottie-player src="https://defuj.github.io/quickcount/loading.json" class="lottie" background="transparent"
+      speed="1" loop autoplay></lottie-player>
   </div>
 
   <script>
